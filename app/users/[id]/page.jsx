@@ -6,7 +6,7 @@ const getUserId = async (id) => {
 
 const UserIdPage = async ({ params }) => {
    const userId = await getUserId(params.id);
-   console.log(userId);
+
    return (
       <div className="bg-slate-800 p-10 rounded-md">
          <img

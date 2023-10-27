@@ -5,9 +5,9 @@ const UsersCard = ({ users }) => {
       <ul>
          {users.map((user) => (
             <Link href={`/users/${user.id}`} key={user.id}>
-               <li className="bg-gray-500 mb-2 p-4 rounded-md text-black flex justify-between">
+               <li className="bg-gray-500 mb-1 p-3 rounded-md text-black flex justify-between ">
                   <div>
-                     <h5 className="font-bold">
+                     <h5 className="font-center">
                         {user.id}. {user.first_name}
                         {user.last_name}
                      </h5>
@@ -15,7 +15,7 @@ const UsersCard = ({ users }) => {
                   </div>
                   <img
                      src={user.avatar}
-                     className="rounded-full w-20"
+                     className="rounded-full w-14"
                      alt="rostro del usurio"
                   />
                </li>
